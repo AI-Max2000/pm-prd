@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-04",
+  "timezone": "Asia/Shanghai",
+  "execution_mode": "Codex directly read local SKILL.md and task-specific references, generated concrete artifacts, then reconciled shared contracts. Not an installed auto-trigger test.",
+  "scenario": "回声：用户反馈审核与导出",
+  "business_input_kind": "8 synthetic feedback records, no real customer data",
+  "classifier_mode": "preset category suggestions for UI demonstration; not a model benchmark",
+  "skills": [
+    {
+      "skill": "pm-prd",
+      "source_sha256": "673e4e516900da20522b6fcd461a3d36ca771a3db607a2fe2829e15c9c7ae1df",
+      "file": "SKILL.md"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "assets/03-prd.png",
+      "source": "rendered/03-prd.html",
+      "width": 1280,
+      "height": 2127,
+      "capture": "ego-browser Chromium screenshot, unretouched",
+      "image_sha256": "efc153da1130847e842a58b784bbe8e49cf7d14902470d8d6f40565057c12a79",
+      "source_sha256": "270f36467d65077e61b716db0cb191a59707ec897d2e762abbe3b93447252de1"
+    }
+  ],
+  "example": {
+    "file": "examples/03-PRD规格.md",
+    "sha256": "1594cf2b96be0552a2f5cea011b2dd451eda4728bb6777a44641b42b910bb877"
+  },
+  "verification": "交付的是实际生成的演示需求稿，截图来自该文档。8 条输入为合成样本；字段是需求级建议，尚无真实接口。配套原型只验证审核与导出的一部分交互，不代表 PRD 所有要求已实现、评审通过或生产上线。",
+  "not_claimed": [
+    "global skill auto-discovery",
+    "production deployment",
+    "real customer interviews",
+    "classifier accuracy benchmark",
+    "commercial efficiency improvement"
+  ]
+}
